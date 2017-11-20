@@ -1,18 +1,39 @@
-h1{
+body {
+  background: #004D40
+}
+
+h1 {
   text-transform: uppercase;
   text-align: center;
+  color: #E0F2F1;
 }
 
-
-.display{
+.display {
   display: none;
 }
-.card{
+
+.card {
   background-color: #333;
   border-color: #333;
   padding: 1rem;
   margin: 2rem auto;
 }
-li{
+
+li {
   list-style: none;
+}
+
+form {
+  text-align: center;
+}
+#textHelp{
+  color: #E0F2F1 !important;
+
+  }
+.back {
+  display: inline;
+}
+button{
+  cursor: pointer;
+  
 }
