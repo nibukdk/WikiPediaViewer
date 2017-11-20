@@ -7,7 +7,8 @@
 
   <title>Wikipedia Viewer</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="app.js"></script>
@@ -20,15 +21,22 @@
     <div class="row">
       <div class=" col-md-9 col-lg-9">
         <h1>WikiPedia Viewer</h1>
-        <form action="result.html" method="#">
+        <form>
           <div class="form-group">
-            <label for="search">Search Topic:
-            </label>
-            <input type="text" id="search" class="form-control" placeholder="Topic">
+
+            <input type="text" id="search" class="form-control" name="search" placeholder="Wikipedia Search">
             <small id="emailHelp" class="form-text text-muted">Enter the wiki-search topics in here</small>
           </div>
           <button class="btn btn-primary">Serach</button>
         </form>
+
+        <div>
+
+        </div>
+        <ul class="list-item">
+          <h3 class="search-topic"></h3>
+
+        </ul>
       </div>
     </div>
   </div>
