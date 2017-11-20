@@ -12,13 +12,22 @@ $(document).ready(function() {
     $.getJSON(wikiApi, function(data) {
       let result = data.query.search;
       console.log(data);
-      for(let i=0; i<=10;i++){
 
-         $('.list-item').append('<li class="card" id="'+result[i].pageid+'">'+
-           '<div class="card-title">'+result[i].title+'</div>'+
-           '<p>'+result[i].snippet+'</p>'+
-           '<span>'+result[i].timestamp.toString()+'</span>'
-         +'</li>'  );
+      for (let i = 0; i <= 10; i++) {
+
+        $('.list-item').append('<li>' +
+          '<div class="card w-75 card-inverse " id="' + result[i].pageid + '">' +
+          '<div class="card-block text-center">' +
+          '<h2 class="card-title">' + result[i].title + '</h2>' +
+          '<p class="card-text">' + result[i].snippet + '</p>' +
+          ' <a href="#" class="card-link-primary text-right" >Read more</a>' +
+          '</div>' +
+          '<div class="card-footer">' +
+          '<small>' + result[i].timestamp.toString() + '</small>' +
+
+          '</div>' +
+          '</div>' +
+          '</li>');
       }
 
     });
